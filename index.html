@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Xiao Yan — PhD Student in Computer Science</title>
-    <meta name="description" content="Xiao Yan is a PhD student in Computer Science (Systems Track) at the University of Texas at Dallas, researching Mobile Computing, On-Device Intelligence, and Edge-Cloud Systems.">
+    <meta name="description" content="Xiao Yan is a PhD student in Computer Science (Systems Track) at the University of Texas at Dallas, researching mobile computing, on-device intelligence, and edge-cloud systems.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -23,6 +23,13 @@
             "name": "University of Texas at Dallas"
         },
         "email": "Xiao.Yan@utdallas.edu",
+        "knowsAbout": [
+            "Mobile Computing",
+            "On-Device Intelligence",
+            "Edge-Cloud Systems",
+            "Acoustic Sensing",
+            "Wildlife Monitoring Systems"
+        ],
         "sameAs": [
             "https://github.com/Kelvin23-utd"
         ]
@@ -44,6 +51,7 @@
             </button>
             <ul class="nav-links" id="nav-links">
                 <li><a href="#about">About</a></li>
+                <li><a href="#news">News</a></li>
                 <li><a href="#research">Research</a></li>
                 <li><a href="#publications">Publications</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -70,6 +78,7 @@
                 <p class="hero-affiliation">Department of Computer Science &middot; University of Texas at Dallas</p>
                 <div class="hero-cta">
                     <a href="#research" class="btn btn-primary">View Research</a>
+                    <a href="Xiao_Yan_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Download CV</a>
                     <a href="#contact" class="btn btn-outline">Get in Touch</a>
                 </div>
             </div>
@@ -101,10 +110,11 @@
                     Applied Computational Science &amp; Engineering from <strong>Imperial College London</strong> (Merit, 2023).
                 </p>
                 <p>
-                    My research interests focus on <strong>mobile computing</strong>, <strong>on-device intelligence</strong>,
-                    and <strong>edge&ndash;cloud systems</strong>, with particular emphasis on deploying and optimizing
-                    large language models for resource-constrained environments. I'm also interested in acoustic sensing,
-                    privacy-preserving systems, and human activity recognition.
+                    My research focuses on <strong>mobile computing</strong>, <strong>on-device intelligence</strong>,
+                    and <strong>edge&ndash;cloud systems</strong> &mdash; building systems that run AI on small,
+                    energy-constrained devices in the real world. My current work deploys autonomous sensing systems
+                    in the field for wildlife monitoring; I'm also interested in on-device LLMs, acoustic sensing,
+                    and privacy-preserving systems.
                 </p>
             </div>
 
@@ -148,20 +158,89 @@
         </div>
     </section>
 
-    <!-- Research Section -->
-    <section class="section section-alt" id="research">
+    <!-- News Section -->
+    <section class="section section-alt" id="news">
         <div class="section-container">
             <h2 class="section-title fade-in">
-                <span class="section-number">02.</span> Research
+                <span class="section-number">02.</span> News
+            </h2>
+            <div class="timeline fade-in">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h4>Wildlife monitoring field deployment</h4>
+                            <span class="timeline-date">Jun 2026</span>
+                        </div>
+                        <p>Started leading the systems track of an edge-sensing field deployment for wildlife monitoring &mdash; autonomous, solar-powered sensor nodes with on-device inference.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h4>Hestia submitted to ACM MobiCom</h4>
+                            <span class="timeline-date">Feb 2026</span>
+                        </div>
+                        <p>Submitted &ldquo;Hestia: Semantic Acoustic Sensing and On-Device LLM Reasoning for Privacy-Preserving Home Routine Recognition&rdquo; (under review).</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h4>Paper published at FMSys '25</h4>
+                            <span class="timeline-date">2025</span>
+                        </div>
+                        <p>&ldquo;Are We There Yet? A Measurement Study of Efficiency for LLM Applications on Mobile Devices&rdquo; appeared at FMSys&nbsp;'25.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section class="section" id="research">
+        <div class="section-container">
+            <h2 class="section-title fade-in">
+                <span class="section-number">03.</span> Research
             </h2>
             <div class="research-grid">
-                <!-- Research Card 1 -->
+                <!-- Research Card 1 — current -->
                 <div class="research-card fade-in">
                     <div class="card-accent"></div>
                     <div class="card-body">
                         <div class="card-header">
                             <span class="card-label">Current</span>
-                            <span class="card-date">01/2025 &ndash; Present</span>
+                            <span class="card-date">06/2026 &ndash; Present</span>
+                        </div>
+                        <h3>Autonomous Edge Sensing for Wildlife Monitoring</h3>
+                        <p>
+                            Leading the systems track of a field deployment that runs wildlife monitoring on autonomous,
+                            solar-powered edge devices &mdash; combining cameras, microphones, and other low-power sensors
+                            with on-device inference, built for long-running operation in the wild.
+                        </p>
+                        <ul class="card-highlights">
+                            <li>Two-tier architecture: sub-watt sensor nodes wake an inference-class board only when needed, cutting energy several-fold</li>
+                            <li>Instrumented power profiling of each sensor and compute stage to guide the system design</li>
+                            <li>Low-cost sensors filter false camera triggers, reducing image-inference energy without losing detections</li>
+                        </ul>
+                        <div class="card-tags">
+                            <span>Edge AI</span>
+                            <span>Embedded Systems</span>
+                            <span>Energy Efficiency</span>
+                            <span>Field Deployment</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Research Card 2 -->
+                <div class="research-card fade-in">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-label">Under Review</span>
+                            <span class="card-date">08/2025 &ndash; 02/2026</span>
                         </div>
                         <h3>Hestia: Privacy-Preserving Home Routine Recognition</h3>
                         <p>
@@ -183,12 +262,12 @@
                     </div>
                 </div>
 
-                <!-- Research Card 2 -->
+                <!-- Research Card 3 -->
                 <div class="research-card fade-in">
                     <div class="card-accent"></div>
                     <div class="card-body">
                         <div class="card-header">
-                            <span class="card-label">Completed</span>
+                            <span class="card-label">Published</span>
                             <span class="card-date">01/2025 &ndash; 03/2025</span>
                         </div>
                         <h3>Efficiency of LLM Applications on Mobile Devices</h3>
@@ -214,12 +293,26 @@
     </section>
 
     <!-- Publications Section -->
-    <section class="section" id="publications">
+    <section class="section section-alt" id="publications">
         <div class="section-container">
             <h2 class="section-title fade-in">
-                <span class="section-number">03.</span> Publications
+                <span class="section-number">04.</span> Publications
             </h2>
             <div class="publications-list">
+                <div class="pub-item fade-in">
+                    <span class="pub-badge pub-review">Under Review</span>
+                    <div class="pub-content">
+                        <p class="pub-title">
+                            &ldquo;Hestia: Semantic Acoustic Sensing and On-Device LLM Reasoning for Privacy-Preserving Home Routine Recognition&rdquo;
+                        </p>
+                        <p class="pub-authors">
+                            <strong>X. Yan</strong> et al.
+                        </p>
+                        <p class="pub-venue">
+                            Under review at ACM MobiCom.
+                        </p>
+                    </div>
+                </div>
                 <div class="pub-item fade-in">
                     <span class="pub-badge pub-published">Published</span>
                     <div class="pub-content">
@@ -235,29 +328,15 @@
                         </p>
                     </div>
                 </div>
-                <div class="pub-item fade-in">
-                    <span class="pub-badge pub-review">Under Review</span>
-                    <div class="pub-content">
-                        <p class="pub-title">
-                            &ldquo;Hestia: Semantic Acoustic Sensing and On-Device LLM Reasoning for Privacy-Preserving Home Routine Recognition&rdquo;
-                        </p>
-                        <p class="pub-authors">
-                            <strong>X. Yan</strong> et al.
-                        </p>
-                        <p class="pub-venue">
-                            Under review at ACM MobiCom.
-                        </p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section class="section section-alt" id="projects">
+    <section class="section" id="projects">
         <div class="section-container">
             <h2 class="section-title fade-in">
-                <span class="section-number">04.</span> Projects
+                <span class="section-number">05.</span> Projects
             </h2>
             <div class="projects-grid">
                 <div class="project-card fade-in">
@@ -338,10 +417,10 @@
     </section>
 
     <!-- Skills Section -->
-    <section class="section" id="skills">
+    <section class="section section-alt" id="skills">
         <div class="section-container">
             <h2 class="section-title fade-in">
-                <span class="section-number">05.</span> Technical Skills
+                <span class="section-number">06.</span> Technical Skills
             </h2>
             <div class="skills-grid fade-in">
                 <div class="skill-category">
@@ -382,6 +461,8 @@
                         <span class="pill">LaTeX</span>
                         <span class="pill">Docker</span>
                         <span class="pill">Android Studio</span>
+                        <span class="pill">Raspberry Pi</span>
+                        <span class="pill">ESP32</span>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -394,6 +475,7 @@
                         <span class="pill pill-accent">On-Device LLM Systems</span>
                         <span class="pill pill-accent">Edge&ndash;Cloud Architecture</span>
                         <span class="pill pill-accent">Acoustic Sensing</span>
+                        <span class="pill pill-accent">Embedded Systems</span>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -411,10 +493,10 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="section section-alt" id="contact">
+    <section class="section" id="contact">
         <div class="section-container">
             <h2 class="section-title fade-in">
-                <span class="section-number">06.</span> Get in Touch
+                <span class="section-number">07.</span> Get in Touch
             </h2>
             <div class="contact-content fade-in">
                 <p>I'm always open to discussing research collaborations, new ideas, or opportunities. Feel free to reach out.</p>
@@ -431,6 +513,10 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
                         <span>Google Scholar</span>
                     </a>
+                    <a href="Xiao_Yan_CV.pdf" target="_blank" rel="noopener noreferrer" class="contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+                        <span>CV (PDF)</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -439,7 +525,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
-            <p>&copy; 2025 Xiao Yan. Built with vanilla HTML, CSS &amp; JS.</p>
+            <p>&copy; 2026 Xiao Yan. Built with vanilla HTML, CSS &amp; JS.</p>
             <p class="footer-note">No frameworks were harmed in the making of this website.</p>
         </div>
     </footer>

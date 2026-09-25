@@ -1,547 +1,259 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Xiao Yan — PhD Student in Computer Science</title>
-    <meta name="description" content="Xiao Yan is a PhD student in Computer Science (Systems Track) at the University of Texas at Dallas, researching mobile computing, on-device intelligence, and edge-cloud systems.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-
-    <!-- Structured Data for SEO -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Xiao Yan",
-        "url": "https://kelvin23-utd.github.io/perosnal_page/",
-        "jobTitle": "PhD Student in Computer Science",
-        "affiliation": {
-            "@type": "Organization",
-            "name": "University of Texas at Dallas"
-        },
-        "email": "Xiao.Yan@utdallas.edu",
-        "knowsAbout": [
-            "Mobile Computing",
-            "On-Device Intelligence",
-            "Edge-Cloud Systems",
-            "Acoustic Sensing",
-            "Wildlife Monitoring Systems"
-        ],
-        "sameAs": [
-            "https://github.com/Kelvin23-utd"
-        ]
-    }
-    </script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Xiao Yan</title>
+<meta name="description" content="Xiao Yan is a PhD student in Computer Science at The University of Texas at Dallas, working on mobile sensing, low-power edge systems, and multimodal perception.">
+<meta name="author" content="Xiao Yan">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Particle Canvas Background -->
-    <canvas id="particle-canvas"></canvas>
 
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#hero" class="nav-logo">X.Y.</a>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
-                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-            </button>
-        </div>
-    </nav>
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-name" href="#top">Xiao Yan</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="Xiao_Yan_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
+    </ul>
+  </div>
+</nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <p class="hero-greeting">Hello, I'm</p>
-                <h1 class="hero-name">Xiao Yan</h1>
-                <div class="typing-wrapper">
-                    <span class="typing-text" id="typing-text"></span>
-                    <span class="typing-cursor">|</span>
-                </div>
-                <p class="hero-affiliation">Department of Computer Science &middot; University of Texas at Dallas</p>
-                <div class="hero-cta">
-                    <a href="#research" class="btn btn-primary">View Research</a>
-                    <a href="Xiao_Yan_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Download CV</a>
-                    <a href="#contact" class="btn btn-outline">Get in Touch</a>
-                </div>
-            </div>
-            <div class="hero-photo">
-                <div class="photo-frame">
-                    <img src="xiao.jpg" alt="Xiao Yan" loading="eager">
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <span>Scroll</span>
-            <div class="scroll-arrow"></div>
-        </div>
-    </section>
+<main class="wrap" id="top">
 
-    <!-- About Section -->
-    <section class="section" id="about">
-        <div class="section-container">
-            <h2 class="section-title fade-in">
-                <span class="section-number">01.</span> About Me
-            </h2>
-            <div class="about-content fade-in">
-                <p>
-                    I am a <strong>PhD student in Computer Science (Systems Track)</strong> at the
-                    <strong>University of Texas at Dallas</strong>, under the supervision of
-                    <a href="https://yiding-cs.github.io/" target="_blank" rel="noopener noreferrer"><strong>Dr. Yi Ding</strong></a>.
-                    I completed my bachelor's degree in Computer Science
-                    from the <strong>University of Birmingham</strong> (First Class Honours, 2022) and my master's degree in
-                    Applied Computational Science &amp; Engineering from <strong>Imperial College London</strong> (Merit, 2023).
-                </p>
-                <p>
-                    My research focuses on <strong>mobile computing</strong>, <strong>on-device intelligence</strong>,
-                    and <strong>edge&ndash;cloud systems</strong> &mdash; building systems that run AI on small,
-                    energy-constrained devices in the real world. My current work deploys autonomous sensing systems
-                    in the field for wildlife monitoring; I'm also interested in on-device LLMs, acoustic sensing,
-                    and privacy-preserving systems.
-                </p>
-            </div>
+  <!-- ============================ ABOUT ============================ -->
+  <header class="header" id="about">
+    <div class="header-top">
+      <img class="portrait" src="xiao.jpg" alt="Portrait of Xiao Yan">
+      <div class="header-id">
+        <h1>Xiao Yan</h1>
+        <p class="role">
+          PhD Student, Computer Science<br>
+          <strong>The University of Texas at Dallas</strong><br>
+          Advised by <a href="https://yi-ding.me/" target="_blank" rel="noopener noreferrer">Prof. Yi Ding</a>
+        </p>
+        <!-- signal-line motif: a fine sensor trace, static by design -->
+        <svg class="signal" viewBox="0 0 132 14" role="presentation" aria-hidden="true">
+          <path d="M0 7 H22 l4 -5 l4 10 l4 -5 H56 l4 -6 l4 12 l4 -6 H90 l4 -4 l4 8 l4 -4 H118"/>
+          <circle cx="126" cy="7" r="2"/>
+        </svg>
+      </div>
+    </div>
 
-            <!-- Education Timeline -->
-            <div class="timeline fade-in">
-                <h3 class="subsection-title">Education</h3>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h4>University of Texas at Dallas</h4>
-                            <span class="timeline-date">08/2024 &ndash; Present</span>
-                        </div>
-                        <p>Ph.D. in Computer Science, Systems Track &middot; Advisor: <a href="https://yiding-cs.github.io/" target="_blank" rel="noopener noreferrer">Dr. Yi Ding</a></p>
-                        <span class="timeline-tag">Mobile Computing</span>
-                        <span class="timeline-tag">On-Device Intelligence</span>
-                        <span class="timeline-tag">Edge&ndash;Cloud Systems</span>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h4>Imperial College London</h4>
-                            <span class="timeline-date">10/2022 &ndash; 10/2023</span>
-                        </div>
-                        <p>M.Sc. Applied Computational Science &amp; Engineering, Merit</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h4>University of Birmingham</h4>
-                            <span class="timeline-date">08/2019 &ndash; 07/2022</span>
-                        </div>
-                        <p>B.Sc. Computer Science with Honours, First Class</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="intro">
+      <p>
+        I am a PhD student in Computer Science at The University of Texas at Dallas. My research
+        focuses on mobile sensing, low-power edge systems, and multimodal perception. I build and
+        evaluate sensing systems that connect embedded hardware, machine learning, and real-world
+        deployment.
+      </p>
+      <p>
+        My work spans the full stack of a sensing system: hardware integration, firmware, data
+        collection, on-device machine learning, power measurement, and deployment. The platforms I
+        work with include cameras, microphones, GNSS receivers, microcontrollers, and single-board
+        computers.
+      </p>
+    </div>
 
-    <!-- News Section -->
-    <section class="section section-alt" id="news">
-        <div class="section-container">
-            <h2 class="section-title fade-in">
-                <span class="section-number">02.</span> News
-            </h2>
-            <div class="timeline fade-in">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h4>Wildlife monitoring field deployment</h4>
-                            <span class="timeline-date">Jun 2026</span>
-                        </div>
-                        <p>Started leading the systems track of an edge-sensing field deployment for wildlife monitoring &mdash; autonomous, solar-powered sensor nodes with on-device inference.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h4>Passed Ph.D. qualifying exam</h4>
-                            <span class="timeline-date">Apr 2026</span>
-                        </div>
-                        <p>Passed the Ph.D. qualifying exam at UT Dallas, with a systems review of multimodal sensing and on-device AI.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h4>Hestia submitted to ACM SenSys</h4>
-                            <span class="timeline-date">Feb 2026</span>
-                        </div>
-                        <p>Submitted &ldquo;Hestia: Semantic Acoustic Sensing and On-Device LLM Reasoning for Privacy-Preserving Home Routine Recognition&rdquo; (under review).</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h4>Paper published at FMSys '25</h4>
-                            <span class="timeline-date">2025</span>
-                        </div>
-                        <p>&ldquo;Are We There Yet? A Measurement Study of Efficiency for LLM Applications on Mobile Devices&rdquo; appeared at FMSys&nbsp;'25.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <ul class="links">
+      <li><span class="label">Email</span> <a href="mailto:Xiao.Yan@utdallas.edu">Xiao.Yan@utdallas.edu</a></li>
+      <li><span class="label">CV</span> <a href="Xiao_Yan_CV.pdf" target="_blank" rel="noopener noreferrer">PDF</a></li>
+      <li><span class="label">GitHub</span> <a href="https://github.com/Kelvin23-utd" target="_blank" rel="noopener noreferrer">Kelvin23-utd</a></li>
+      <!-- Google Scholar intentionally omitted: no profile exists yet. Add here once it does. -->
+    </ul>
+  </header>
 
-    <!-- Research Section -->
-    <section class="section" id="research">
-        <div class="section-container">
-            <h2 class="section-title fade-in">
-                <span class="section-number">03.</span> Research
-            </h2>
-            <div class="research-grid">
-                <!-- Research Card 1 — current -->
-                <div class="research-card fade-in">
-                    <div class="card-accent"></div>
-                    <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-label">Current</span>
-                            <span class="card-date">06/2026 &ndash; Present</span>
-                        </div>
-                        <h3>Autonomous Edge Sensing for Wildlife Monitoring</h3>
-                        <p>
-                            Leading the systems track of a field deployment that runs wildlife monitoring on autonomous,
-                            solar-powered edge devices &mdash; combining cameras, microphones, and other low-power sensors
-                            with on-device inference, built for long-running operation in the wild.
-                        </p>
-                        <ul class="card-highlights">
-                            <li>Two-tier architecture: sub-watt sensor nodes wake an inference-class board only when needed, cutting energy several-fold</li>
-                            <li>Instrumented power profiling of each sensor and compute stage to guide the system design</li>
-                            <li>Low-cost sensors filter false camera triggers, reducing image-inference energy without losing detections</li>
-                        </ul>
-                        <div class="card-tags">
-                            <span>Edge AI</span>
-                            <span>Embedded Systems</span>
-                            <span>Energy Efficiency</span>
-                            <span>Field Deployment</span>
-                        </div>
-                    </div>
-                </div>
+  <!-- ========================= PUBLICATIONS ========================= -->
+  <section id="publications">
+    <h2>Publications</h2>
 
-                <!-- Research Card 2 -->
-                <div class="research-card fade-in">
-                    <div class="card-accent"></div>
-                    <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-label">Under Review</span>
-                            <span class="card-date">08/2025 &ndash; 02/2026</span>
-                        </div>
-                        <h3>Hestia: Privacy-Preserving Home Routine Recognition</h3>
-                        <p>
-                            Designed a hybrid edge&ndash;central system that reconstructs daily routines from sparse
-                            acoustic detections using commodity microphones and on-device LLM reasoning, with no raw
-                            audio leaving the home.
-                        </p>
-                        <ul class="card-highlights">
-                            <li>Hierarchical temporal clustering with bounded on-device LLM inference</li>
-                            <li>Continual self-adaptation via LLM pseudo-labels</li>
-                            <li>Deployed across five real homes (17 subject-days); tracked a co-deployed camera baseline and outperformed WiFi CSI and IMU</li>
-                        </ul>
-                        <div class="card-tags">
-                            <span>Acoustic Sensing</span>
-                            <span>On-Device LLM</span>
-                            <span>Privacy</span>
-                            <span>Edge Computing</span>
-                        </div>
-                    </div>
-                </div>
+    <p class="sub-label">Peer-reviewed</p>
 
-                <!-- Research Card 3 -->
-                <div class="research-card fade-in">
-                    <div class="card-accent"></div>
-                    <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-label">Published</span>
-                            <span class="card-date">01/2025 &ndash; 03/2025</span>
-                        </div>
-                        <h3>Efficiency of LLM Applications on Mobile Devices</h3>
-                        <p>
-                            Measured efficiency tradeoffs across mobile, edge, and cloud deployments for LLM-based
-                            applications, benchmarking end-to-end latency and memory across model families, sizes,
-                            and compression strategies.
-                        </p>
-                        <ul class="card-highlights">
-                            <li>Built AutoLife-Lite: lightweight LLM app for real-time context inference from sensor data</li>
-                            <li>Quantified performance gaps between deployment strategies</li>
-                            <li>Established design guidelines for resource-constrained LLM systems</li>
-                        </ul>
-                        <div class="card-tags">
-                            <span>Mobile LLM</span>
-                            <span>Benchmarking</span>
-                            <span>Model Compression</span>
-                            <span>Energy Efficiency</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <article class="pub">
+      <a class="pub-thumb" href="fig/fmsys-tiers.png" target="_blank" rel="noopener noreferrer">
+        <img src="fig/fmsys-tiers.png" width="1400" height="980" decoding="async"
+             alt="Diagram of the three deployment tiers compared in the study: a language model
+                  running on the mobile device alone, the device paired with an edge server over a
+                  local network connection, and the device calling a cloud server over a wide area
+                  network connection.">
+      </a>
+      <div class="pub-body">
+        <h3 class="pub-title">Are We There Yet? A Measurement Study of Efficiency for LLM Applications on Mobile Devices</h3>
+        <p class="pub-authors"><span class="me">Xiao Yan</span>, Yi Ding</p>
+        <p class="pub-venue">
+          <em>2nd International Workshop on Foundation Models for Cyber-Physical Systems
+          &amp; Internet of Things</em> (FMSys&nbsp;&rsquo;25), 2025
+        </p>
+        <p class="pub-note">
+          Measures where on-device language-model applications actually spend latency and
+          memory across phone, edge, and cloud deployments.
+        </p>
+        <p class="pub-links">
+          <a href="https://doi.org/10.1145/3722565.3727192" target="_blank" rel="noopener noreferrer">DOI</a>
+          <a href="https://arxiv.org/abs/2504.00002" target="_blank" rel="noopener noreferrer">arXiv</a>
+        </p>
+      </div>
+    </article>
 
-    <!-- Publications Section -->
-    <section class="section section-alt" id="publications">
-        <div class="section-container">
-            <h2 class="section-title fade-in">
-                <span class="section-number">04.</span> Publications
-            </h2>
-            <div class="publications-list">
-                <div class="pub-item fade-in">
-                    <span class="pub-badge pub-review">Under Review</span>
-                    <div class="pub-content">
-                        <p class="pub-title">
-                            &ldquo;Hestia: Semantic Acoustic Sensing and On-Device LLM Reasoning for Privacy-Preserving Home Routine Recognition&rdquo;
-                        </p>
-                        <p class="pub-authors">
-                            <strong>X. Yan</strong>, C. Htun, J. Yang, Z. Liu, D. Li, and Y. Ding
-                        </p>
-                        <p class="pub-venue">
-                            Under review at ACM SenSys.
-                        </p>
-                    </div>
-                </div>
-                <div class="pub-item fade-in">
-                    <span class="pub-badge pub-published">Published</span>
-                    <div class="pub-content">
-                        <p class="pub-title">
-                            &ldquo;Are We There Yet? A Measurement Study of Efficiency for LLM Applications on Mobile Devices&rdquo;
-                        </p>
-                        <p class="pub-authors">
-                            <strong>X. Yan</strong> and Y. Ding
-                        </p>
-                        <p class="pub-venue">
-                            Proc. 2nd International Workshop on Foundation Models for Cyber-Physical Systems &amp; IoT
-                            (FMSys&nbsp;'25), 2025.
-                            <a href="https://doi.org/10.1145/3722565.3727192" target="_blank" rel="noopener noreferrer">DOI</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <p class="sub-label">Demos</p>
 
-    <!-- Projects Section -->
-    <section class="section" id="projects">
-        <div class="section-container">
-            <h2 class="section-title fade-in">
-                <span class="section-number">05.</span> Projects
-            </h2>
-            <div class="projects-grid">
-                <div class="project-card fade-in">
-                    <div class="project-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17.7 7.7a7.5 7.5 0 1 0 0 10.6"/><circle cx="12" cy="12" r="2.5"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3"/></svg>
-                    </div>
-                    <h3>Wind Farm Layout Optimization</h3>
-                    <p>Benchmarked GA, Greedy Heuristic, and Random Search algorithms for large-scale wind farm planning. Analyzed inter-farm wake effects under varying wind conditions.</p>
-                    <span class="project-date">Jun &ndash; Sep 2023 &middot; Imperial College London</span>
-                    <a href="https://github.com/ese-msc-2022/irp-ay22?tab=readme-ov-file" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                        GitHub
-                    </a>
-                </div>
+    <article class="pub">
+      <a class="pub-thumb" href="fig/osphra-search.png" target="_blank" rel="noopener noreferrer">
+        <img src="fig/osphra-search.png" width="1401" height="811" decoding="async"
+             alt="Three maps of the same indoor zone on a shared colour scale for relative volatile
+                  organic compound strength. An exhaustive raster sweep takes 36 probes over 267
+                  seconds, while two guided searches reach the odour source in 3 probes over 30
+                  seconds and 6 probes over 78 seconds.">
+      </a>
+      <div class="pub-body">
+        <h3 class="pub-title">Osphra: Finding Odor Sources without Mapping Every Point</h3>
+        <p class="pub-authors">Hui-Ju Fan, <span class="me">Xiao Yan</span>, Yi Ding</p>
+        <p class="pub-venue">
+          Demo, <em>32nd Annual International Conference on Mobile Computing and Networking</em>
+          (ACM MobiCom&nbsp;&rsquo;26), 2026
+        </p>
+        <p class="pub-note">
+          A handheld electronic nose that reaches an indoor odour source in a few guided probes
+          instead of sweeping the whole grid.
+        </p>
+      </div>
+    </article>
 
-                <div class="project-card fade-in">
-                    <div class="project-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 0 1 5 5c0 2-1 3-2 4l-1 1v2h-4v-2l-1-1c-1-1-2-2-2-4a5 5 0 0 1 5-5z"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
-                    </div>
-                    <h3>Emotion-Aware Chatbot</h3>
-                    <p>Built a multimodal chatbot fusing real-time facial expression recognition (CNN) with dialogue modeling (LSTM). Designed and deployed the end-to-end pipeline as a standalone application.</p>
-                    <span class="project-date">Sep 2021 &ndash; Mar 2022 &middot; Univ. of Birmingham</span>
-                </div>
+    <p class="sub-label">Under review</p>
 
-                <div class="project-card fade-in">
-                    <div class="project-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
-                    </div>
-                    <h3>Parallel Navier-Stokes Solver</h3>
-                    <p>Developed a parallel solver for the Navier-Stokes equations using MPI. Tested on Imperial College London's HPC cluster for scalable fluid dynamics simulation.</p>
-                    <span class="project-date">Imperial College London</span>
-                    <a href="https://github.com/ese-msc-2022/ppp-mpi-assessment-ACSE-ay22" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                        GitHub
-                    </a>
-                </div>
+    <article class="pub">
+      <a class="pub-thumb" href="fig/hestia-system.png" target="_blank" rel="noopener noreferrer">
+        <img src="fig/hestia-system.png" width="1648" height="805" decoding="async"
+             alt="System diagram. Everyday household sounds reach microphone-equipped edge nodes in
+                  each room, where a lightweight classifier scores each clip. Low-confidence clips
+                  and classification results pass to a smartphone acting as the central node, which
+                  aggregates events, labels activities and compiles a routine timeline, then returns
+                  pseudo-labels and per-room priors so the edge classifiers keep adapting.">
+      </a>
+      <div class="pub-body">
+        <h3 class="pub-title">Hestia: Semantic Acoustic Sensing and On-Device LLM Reasoning for Privacy-Preserving Home Routine Recognition</h3>
+        <p class="pub-authors"><span class="me">Xiao Yan</span>, Chitsein Htun, Jing Yang, Ziqi Liu, Dong Li, Yi Ding</p>
+        <p class="pub-venue">Under review at ACM SenSys</p>
+        <p class="pub-note">
+          Reconstructs daily home routines from sparse acoustic events using a 4-bit language
+          model that runs entirely on a phone, so raw audio never leaves the home.
+        </p>
+      </div>
+    </article>
+  </section>
 
-                <div class="project-card fade-in">
-                    <div class="project-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
-                    </div>
-                    <h3>Lunar Crater Detection</h3>
-                    <p>Trained and fine-tuned YOLOv5 for automatic impact crater detection on the Moon's surface.</p>
-                    <span class="project-date">Imperial College London</span>
-                    <a href="https://github.com/ese-msc-2022/acds-moonshot-deslandres" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                        GitHub
-                    </a>
-                </div>
+  <!-- =========================== RESEARCH =========================== -->
+  <section id="research">
+    <h2>Research</h2>
 
-                <div class="project-card fade-in">
-                    <div class="project-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-                    </div>
-                    <h3>Image Processing Toolkit</h3>
-                    <p>Built a C++ library to apply filters and transformations to 2D images and 3D volumes.</p>
-                    <span class="project-date">Imperial College London</span>
-                    <a href="https://github.com/ese-msc-2022/advanced-programming-group-euclidean" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                        GitHub
-                    </a>
-                </div>
+    <div class="theme">
+      <div class="theme-head">
+        <h3>Low-Power Multimodal Field Sensing</h3>
+        <span class="status">Ongoing</span>
+      </div>
+      <dl>
+        <dt>Question</dt>
+        <dd>How long can an autonomous sensor node keep observing on a fixed energy budget, and where does that budget actually go?</dd>
+        <dt>Approach</dt>
+        <dd>A two-tier node in which sub-watt microcontroller sensors wake an inference-class board only when needed, combining camera, acoustic, motion, and GNSS sensing. Every sensing and compute stage is measured with instrumented power metering rather than estimated.</dd>
+        <dt>Status</dt>
+        <dd>Validated end to end on battery in unattended bench runs; moving toward field deployment.</dd>
+      </dl>
+    </div>
 
-                <div class="project-card fade-in">
-                    <div class="project-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-                    </div>
-                    <h3>Asteroid Impact Simulator</h3>
-                    <p>Python simulation system modeling asteroid strike scenarios in the UK with impact analysis.</p>
-                    <span class="project-date">Imperial College London</span>
-                    <a href="https://github.com/ese-msc-2022/acs-armageddon-Oshima" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                        GitHub
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="theme">
+      <div class="theme-head">
+        <h3>On-Device LLM Reasoning for Sensing</h3>
+        <span class="status">Active</span>
+      </div>
+      <dl>
+        <dt>Question</dt>
+        <dd>Can a small language model running entirely on a phone do useful semantic reasoning over sensor data, inside the memory, latency, and energy budget of that device?</dd>
+        <dt>Approach</dt>
+        <dd>Bound the model's role inside a deterministic pipeline so that its call count and input size stay fixed, then measure latency, memory, and energy on real hardware instead of on a workstation proxy.</dd>
+        <dt>Status</dt>
+        <dd>Hestia is under review at ACM SenSys. The efficiency measurement study that motivated it appeared at FMSys&nbsp;&rsquo;25.</dd>
+      </dl>
+    </div>
 
-    <!-- Skills Section -->
-    <section class="section section-alt" id="skills">
-        <div class="section-container">
-            <h2 class="section-title fade-in">
-                <span class="section-number">06.</span> Technical Skills
-            </h2>
-            <div class="skills-grid fade-in">
-                <div class="skill-category">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-                        Languages
-                    </h3>
-                    <div class="skill-pills">
-                        <span class="pill">Python</span>
-                        <span class="pill">Java</span>
-                        <span class="pill">C/C++</span>
-                        <span class="pill">MATLAB</span>
-                        <span class="pill">JavaScript</span>
-                        <span class="pill">HTML/CSS</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-                        Frameworks &amp; Libraries
-                    </h3>
-                    <div class="skill-pills">
-                        <span class="pill">PyTorch</span>
-                        <span class="pill">TensorFlow</span>
-                        <span class="pill">NumPy</span>
-                        <span class="pill">Pandas</span>
-                        <span class="pill">Scikit-learn</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-                        Tools &amp; Platforms
-                    </h3>
-                    <div class="skill-pills">
-                        <span class="pill">Git</span>
-                        <span class="pill">Linux</span>
-                        <span class="pill">LaTeX</span>
-                        <span class="pill">Docker</span>
-                        <span class="pill">Android Studio</span>
-                        <span class="pill">Raspberry Pi</span>
-                        <span class="pill">ESP32</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4m0 14v4M4.22 4.22l2.83 2.83m9.9 9.9l2.83 2.83M1 12h4m14 0h4M4.22 19.78l2.83-2.83m9.9-9.9l2.83-2.83"/></svg>
-                        Research Domains
-                    </h3>
-                    <div class="skill-pills">
-                        <span class="pill pill-accent">Mobile Computing</span>
-                        <span class="pill pill-accent">On-Device LLM Systems</span>
-                        <span class="pill pill-accent">Edge&ndash;Cloud Architecture</span>
-                        <span class="pill pill-accent">Acoustic Sensing</span>
-                        <span class="pill pill-accent">Embedded Systems</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-                        Languages
-                    </h3>
-                    <div class="skill-pills">
-                        <span class="pill pill-accent">Mandarin (Native)</span>
-                        <span class="pill pill-accent">English (Professional)</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="theme">
+      <div class="theme-head">
+        <h3>Cross-Modal Transfer for GNSS Gesture Sensing</h3>
+        <span class="status">Ongoing</span>
+      </div>
+      <dl>
+        <dt>Question</dt>
+        <dd>Can representations learned from data-rich WiFi sensing transfer to GNSS-based sensing, which is fundamentally data-scarce?</dd>
+        <dt>Approach</dt>
+        <dd>Build bridges between the two modalities through shared physical representations, and characterise when such transfer succeeds and when it fails rather than assuming it works.</dd>
+        <dt>Status</dt>
+        <dd>Ongoing. Experiments are in progress and there are no results to report yet.</dd>
+      </dl>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section class="section" id="contact">
-        <div class="section-container">
-            <h2 class="section-title fade-in">
-                <span class="section-number">07.</span> Get in Touch
-            </h2>
-            <div class="contact-content fade-in">
-                <p>I'm always open to discussing research collaborations, new ideas, or opportunities. Feel free to reach out.</p>
-                <div class="contact-links">
-                    <a href="mailto:Xiao.Yan@utdallas.edu" class="contact-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                        <span>Xiao.Yan@utdallas.edu</span>
-                    </a>
-                    <a href="https://github.com/Kelvin23-utd" target="_blank" rel="noopener noreferrer" class="contact-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                        <span>GitHub</span>
-                    </a>
-                    <a href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer" class="contact-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-                        <span>Google Scholar</span>
-                    </a>
-                    <a href="Xiao_Yan_CV.pdf" target="_blank" rel="noopener noreferrer" class="contact-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
-                        <span>CV (PDF)</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- ============================= NEWS ============================= -->
+  <section id="news">
+    <h2>News</h2>
+    <ul class="news">
+      <li>
+        <time datetime="2026-06">Jun 2026</time>
+        <p>Began leading the systems track of a low-power multimodal edge-sensing project for wildlife monitoring.</p>
+      </li>
+      <li>
+        <time datetime="2026-04">Apr 2026</time>
+        <p>Passed the PhD qualifying exam at UT Dallas.</p>
+      </li>
+      <li>
+        <time datetime="2026-02">Feb 2026</time>
+        <p>Submitted <em>Hestia</em> to ACM SenSys.</p>
+      </li>
+      <li>
+        <time datetime="2025">2025</time>
+        <p><em>Are We There Yet?</em> appeared at FMSys&nbsp;&rsquo;25.</p>
+      </li>
+    </ul>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <p>&copy; 2026 Xiao Yan. Built with vanilla HTML, CSS &amp; JS.</p>
-            <p class="footer-note">No frameworks were harmed in the making of this website.</p>
-        </div>
-    </footer>
+  <!-- =========================== EDUCATION =========================== -->
+  <section id="education">
+    <h2>Education</h2>
+    <ul class="edu">
+      <li>
+        <div class="degree">PhD, Computer Science &mdash; Systems Track</div>
+        <div class="where">The University of Texas at Dallas &middot; 2024 &ndash; present &middot; qualifying exam passed April 2026</div>
+      </li>
+      <li>
+        <div class="degree">MSc, Applied Computational Science &amp; Engineering</div>
+        <div class="where">Imperial College London &middot; 2022 &ndash; 2023 &middot; Merit</div>
+      </li>
+      <li>
+        <div class="degree">BSc, Computer Science</div>
+        <div class="where">University of Birmingham &middot; 2019 &ndash; 2022 &middot; First Class Honours</div>
+      </li>
+    </ul>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- ============================== CV ============================== -->
+  <section id="cv">
+    <h2>CV</h2>
+    <p class="cv-line">
+      <a href="Xiao_Yan_CV.pdf" target="_blank" rel="noopener noreferrer">Download my CV (PDF)</a>
+    </p>
+    <p class="cv-note">Last updated September 2026.</p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>&copy; 2026 Xiao Yan &middot; Department of Computer Science, The University of Texas at Dallas</p>
+  </div>
+</footer>
+
 </body>
 </html>
